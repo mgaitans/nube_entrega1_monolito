@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: appsecrets
+type: Opaque
+stringData:
+  appsecrets.cfg: |
+    SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://postgres:d6A6yb48@192.168.0.5/db-misw-aplicacion"
